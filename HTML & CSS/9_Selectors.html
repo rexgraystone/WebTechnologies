@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Simple selector */
+            p {
+                font-size: 20px;
+            } 
+            /* Class selector */
+            p.center {
+                text-align: center;
+            }
+            /* Generic selector */
+            .center {
+                color: red;
+            }
+            /* ID selector */
+            #para {
+                color: blue;
+            }
+            /* Universal selector */
+            * {
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="center">This heading will be affected by generic and universal selectors</h1>
+        <p class="left">This paragraph will be affected by simple and universal selectors</h1>
+        <p class="center">This paragraph will be affected by simple, class, generic and universal selectors</p>
+        <p id="para">This paragraph will be affected by simple, ID and universal selectors.</p>
+    </body>
+</html>
+
