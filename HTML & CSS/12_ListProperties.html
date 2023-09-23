@@ -12,14 +12,55 @@
             li.three {
                 list-style-type: circle;
             }
+            ol {
+                list-style-type: upper-roman;
+            }
+            ol ol {
+                list-style-type: upper-alpha;
+            }
+            ol ol ol {
+                list-style-type: decimal;
+            }
         </style>
     </head>
     <body>
-        <h3>Fruits</h3>
+        <h3>Content Format</h3>
         <ul>
-            <li class="one">Apple</li>
-            <li class="two">Banana</li>
-            <li class="three">Kiwi</li>
+            <li class="one">Programs</li>
+            <li class="two">Subjects</li>
+            <li class="three">Topics</li>
         </ul>
+        <ol>
+            <li>Information Science</li>
+            <ol>
+                <li>OOMD</li>
+                <li>Java & J2ee</li>
+                <ol>
+                    <li>classes and methods</li>
+                    <li>exceptions</li>
+                    <li>applets</li>
+                    <li>servelets</li>
+                </ol>
+                <li>Computer Networks</li>
+                    <ol>
+                        <li>Part 1</li>
+                        <li>Part 2</li>
+                   </ol>
+                <li>DBMS</li>
+                <li>Operations Research</li>
+            </ol>
+            <li>Computer Science</li>
+            <ol>
+                <li>Compiler Design</li>
+                <li>FLAT</li>
+                <ol>
+                    <li>NFA</li>
+                    <li>DFA</li>
+                    <li>CFG</li>
+                </ol>
+                <li>Computer Graphics</li>
+                <li>Artificial Intelligence</li>
+            </ol>
+        </ol>                   
     </body>
 </html>    
