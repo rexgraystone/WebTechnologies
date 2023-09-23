@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dates</title>
+    </head>
+    <body>
+        <h1>JavaScript Dates</h1>
+        <h2>Using new Date()</h2>
+        <p>Create a new date object with the current date and time:</p>
+        <p id="demo1"></p>
+        <script>
+            const date1 = new Date();
+            document.getElementById("demo1").innerHTML = date1;
+        </script>
+        <p>A date object can also be created with a specified date and time:</p>
+        <p id="demo2"></p>
+        <script>
+            const date2 = new Date("October 13, 2014 11:13:00");
+            document.getElementById("demo2").innerHTML = date2;
+        </script>
+        <p>Using new Date(7 numbers), creates a new date object with the specified date and time:</p>
+        <p id="demo3"></p>
+        <script>
+            const date3 = new Date(2018, 11, 24, 10, 33, 30, 0);
+            document.getElementById("demo3").innerHTML = date3;
+        </script>
+    </body>
+</html>
