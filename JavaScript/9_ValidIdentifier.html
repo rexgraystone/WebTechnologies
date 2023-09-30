@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Valid Identifier
+        </title>
+    </head>
+    <body>
+        <label>Enter an identifier: </label>
+        <input type="text" id="identifier"/>
+        <script>
+            var pattern = /^[a-zA-Z_$][a-zA-Z_$0-9]*$/;
+            var input = document.getElementById('identifier');
+            input.addEventListener("keypress", function(event) {
+                if(event.keyCode === 13) {
+                    if (pattern.test(input.value)) {
+                        alert("Valid identifier");
+                    } else {
+                        alert("Invalid identifier");
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
